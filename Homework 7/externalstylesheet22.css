@@ -1,0 +1,23 @@
+.pinkColor{
+    color: pink;
+    font-family: verdana;
+    font-size: 24px;
+}
+
+.blackColor{
+    color: black;
+    font-family: verdana;
+    font-size: 20px;
+}
+
+#specificLink{
+    color: green;
+    font-family: verdana;
+    font-size: 24px
+}
+
+#specificColor2{
+    color: yellow;
+    font-family: verdana;
+    font-size: 24px
+}
