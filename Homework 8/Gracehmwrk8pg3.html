@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title> My third page</title> 
+     <title>External Style Sheet</title>
+     <link rel="stylesheet" type="text/css" href="file:///Users/gracephillips-own/Documents/MyProjects/externalstylesheet2.css">
+  </head>
+  <body>
+    <a href="file:///Users/gracephillips-own/Downloads/GracePhtry1.html"> Go to my home page</a>
+    <br>
+    <a href="file:///Users/gracephillips-own/Downloads/GracePh2try1.html"> Go to my second page</a>
+    <br>
+    <span id="specificColor2"> Pages </span>
+    <br>
+    <span id="specificColor2"> Form </span>
+  </body>
+  <h2>Contact Us</h2>
+  <body> 
+     <script>
+      function checkboxes()
+      {
+        var Name = document.getElementById("Name").value;
+        if(Name == "") 
+        {
+          document.getElementById("Name").style.backgroundColor = "red";
+          document.getElementById("Name").focus();
+        }
+        var Email = document.getElementById("Email").value;
+        if(Email == "") 
+        {
+          document.getElementById("Email").style.backgroundColor = "red";
+          document.getElementById("Email").focus();
+        }
+      }
+      </script>
+      Name: <input type="text" id="Name"><br>
+      Email: <input type="text" id="Email"><br>
+      <button id="Submit" onclick="checkboxes()">Sumbit</button>
+    </form>
+  </body>
+  <h2>To Accept Terms and Conditions, please copy 'Yes' or 'No' into the text box as written here then hit 'Enter'</h2>
+  <body> 
+    <script>
+      function agreement()
+      { 
+        var yes = document.getElementById("yes").value;
+        if(yes == "Yes") 
+        {
+            document.getElementById("yes").style.backgroundColor = "green";
+            window.alert("You've agreed to the Terms and Conditions! Yay! Hit OK to proceed.")
+            document.getElementById("yes").focus();
+        }
+        if (yes == "No")
+        {
+            document.getElementById("yes").style.backgroundColor = "red"; 
+            window.alert("You haven't agreed to the Terms and Conditions! Hit OK to go back.")
+            document.getElementById("yes").focus();
+        }
+        if (yes = "_")
+        {
+            document.getElementById("yes").style.backgroundColor = "blue";
+            window.alert("You haven't agreed to the Terms and Conditions! Hit OK to go back.")
+            document.getElementById("Email").focus();
+        }
+      }
+    </script>
+    Accept: <input type="text" id="yes"><br>
+    <button id="btnAccept" onclick="agreement()">Enter</button>
+  </body>
+</html>
