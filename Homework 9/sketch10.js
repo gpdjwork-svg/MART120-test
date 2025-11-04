@@ -27,38 +27,14 @@ function draw()
         background(220);
         fill(0,0,0,)
 
-        //hair
-        fill(250,240,190)
-        ellipse(hairX,hairY,225,390);
-        hairX+=movement;
-        if(hairX >= 590 || hairX <= 10)
-            {
-                movement *= -1;
-            }
-
-        //bodydress
-        fill(255,182,193)
-        triangle(150, 500, 300, 160, 450, 500);
-
         //head
-        fill(211,188,180)
+        fill(255,182,193)
         circle(headX,headY,150);
         headX+=headMove;
         if(headX >= 590 || headX <= 10)
             {
                 headMove *= -1;
             }
-
-        //arms
-        line(270,225,100,400);
-        line(330,225,500,400);
-
-        //mouth
-        line(273,140,327,140)
-        //eyes
-        point(270,85);
-        point(330,85);
-        strokeWeight(10);
 
         //legs
         rect(leglX,leglY,50,100);
