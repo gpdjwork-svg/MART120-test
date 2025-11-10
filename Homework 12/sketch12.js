@@ -6,13 +6,13 @@ var d = 83;
 var a = 65;
 var s = 68;
 
-var shapeX = 30;
-var shapeY = 50;
+var shapeX = 50;
+var shapeY = 100;
 var shapeXSpeed;
 var shapeYSpeed;
 
-var enemyX = 40;
-var enemyY = 60;
+var enemyX = 200;
+var enemyY = 50;
 var enemyXSpeed;
 var enemyYSpeed;
 
@@ -25,19 +25,19 @@ function setup()
     shapeYSpeed = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) +1);
     enemyXSpeed = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) +1);
     enemyYSpeed = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) +1);
-    createCharacter(400,200);
+    createCharacter(100,50);
 }
 
 function draw()
 {
-    background(255,182,193);
+    background(255,255,255);
     stroke(0);
     fill(0);
 
     createBorders(10);
 
     createExit();
-    drawCharacter(400,400);
+    drawCharacter();
     characterMovement();
     
 
@@ -134,7 +134,7 @@ function drawCharacter(x,y)
 function createExit()
 {
     textSize(10);
-    text("EXIT", width-50,height-50)
+    text("EXIT", width-50,height-50);
 }
 
 
