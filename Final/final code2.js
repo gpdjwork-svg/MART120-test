@@ -212,6 +212,7 @@ function draw() {
 
 
     fill(255,255,255);
+  
     for (var i = 0; i < FsnowX.length; i++) {
         circle(FsnowX[i], FsnowY[i], FsnowD[i]);
         SsnowX[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
@@ -234,7 +235,6 @@ function draw() {
         }
     }
 
-    fill(255,255,255);
     for (var i = 0; i < FSX.length; i++) {
         circle(FSX[i], FSY[i], FSD[i]);
         FXS[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
@@ -257,9 +257,6 @@ function draw() {
         }
     }
 
-             
-
-    fill(255,255,255);
     for (var i = 0; i < snowX.length; i++) {
         circle(snowX[i], snowY[i], snowD[i]);
         FallX[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
@@ -282,7 +279,7 @@ function draw() {
         }
     }
 
-    fill(255,255,255);
+   
     for (var i = 0; i < SX.length; i++) {
         circle(SX[i], SY[i], SD[i]);
         FSXS[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
@@ -305,7 +302,7 @@ function draw() {
         }
     }
 
-    fill(255,255,255);
+  
     for (var i = 0; i < moreX.length; i++) {
         circle(moreX[i], moreY[i], moreD[i]);
         againX[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
@@ -328,7 +325,7 @@ function draw() {
         }
     }
 
-    fill(255,255,255);
+
     for (var i = 0; i < MX.length; i++) {
         circle(MX[i], MY[i], MD[i]);
         AX[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
@@ -373,7 +370,7 @@ function draw() {
         }
     }
 
-    fill(255,255,255);
+  
     for (var i = 0; i < XX.length; i++) {
         circle(XX[i], XY[i], XD[i]);
         WX[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
@@ -398,7 +395,6 @@ function draw() {
 
              
 
-    fill(255,255,255);
     for (var i = 0; i < VX.length; i++) {
         circle(VX[i], VY[i], VD[i]);
         UX[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
@@ -421,7 +417,7 @@ function draw() {
         }
     }
 
-    fill(255,255,255);
+  
     for (var i = 0; i < TX.length; i++) {
         circle(TX[i], TY[i], TD[i]);
         RX[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
@@ -444,7 +440,7 @@ function draw() {
         }
     }
 
-    fill(255,255,255);
+ 
     for (var i = 0; i < QX.length; i++) {
         circle(QX[i], QY[i], QD[i]);
         NX[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
@@ -467,7 +463,7 @@ function draw() {
         }
     }
 
-    fill(255,255,255);
+   
     for (var i = 0; i < LX.length; i++) {
         circle(LX[i], LY[i], LD[i]);
         BX[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
@@ -490,7 +486,6 @@ function draw() {
         }
     }
 }
-
 
 function getRandomNumber(number) {
     return Math.floor(Math.random() * number) + 10;
